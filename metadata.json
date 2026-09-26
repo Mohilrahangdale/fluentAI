@@ -1,0 +1,6 @@
+{
+  "name": "FluentAI",
+  "description": "Mobile-first AI English speaking partner and learning companion for practicing real voice conversations at zero cost.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

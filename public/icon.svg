@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#064e3b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle glow ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="4" />
+
+  <!-- Speech bubble with tail -->
+  <g filter="url(#shadow)">
+    <!-- Main bubble body -->
+    <path d="M 120 150 C 120 116.86 146.86 90 180 90 L 332 90 C 365.14 90 392 116.86 392 150 L 392 280 C 392 313.14 365.14 340 332 340 L 220 340 L 150 400 L 165 340 L 180 340 C 146.86 340 120 313.14 120 280 Z" fill="url(#bubbleGrad)" />
+  </g>
+
+  <!-- Sound wave bars inside speech bubble -->
+  <g fill="url(#waveGrad)">
+    <!-- Bar 1 -->
+    <rect x="180" y="195" width="18" height="40" rx="9" />
+    <!-- Bar 2 -->
+    <rect x="214" y="165" width="18" height="100" rx="9" />
+    <!-- Bar 3 (Center peak) -->
+    <rect x="247" y="145" width="18" height="140" rx="9" />
+    <!-- Bar 4 -->
+    <rect x="280" y="165" width="18" height="100" rx="9" />
+    <!-- Bar 5 -->
+    <rect x="314" y="195" width="18" height="40" rx="9" />
+  </g>
+
+  <!-- AI Sparkle in top right of bubble -->
+  <path d="M 355 125 Q 365 125 365 115 Q 365 125 375 125 Q 365 125 365 135 Q 365 125 355 125 Z" fill="#10b981" />
+  <circle cx="340" cy="115" r="3" fill="#10b981" />
+</svg>
